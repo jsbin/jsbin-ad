@@ -8,8 +8,7 @@
     "dotenv": true
   },
   "scripts": {
-    "start": "AD_URL=https://srv.buysellads.com/ads/CVAIKKQM.json micro",
-    "now-start": "micro"
+    "start": "micro"
   },
   "keywords": [],
   "author": "",
