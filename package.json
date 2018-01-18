@@ -1,0 +1,23 @@
+{
+  "name": "bsa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "now": {
+    "alias": "bsa",
+    "dotenv": true
+  },
+  "scripts": {
+    "start": "AD_URL=https://srv.buysellads.com/ads/CVAIKKQM.json micro",
+    "now-start": "micro"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "micro": "^8.0.3",
+    "micro-cors": "0.0.4",
+    "node-fetch": "^1.7.2",
+    "request": "^2.81.0"
+  }
+}
