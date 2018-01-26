@@ -1,5 +1,6 @@
 const fetch = require('node-fetch');
 const cors = require('micro-cors')();
+const sponsor = require('./static/index.json');
 
 async function buySellAds(ip) {
   const adURL = 'https://srv.buysellads.com/ads/CVADL2JJ.json';
@@ -31,20 +32,7 @@ async function buySellAds(ip) {
 }
 
 async function codesponsor() {
-  const url = 'https://cs.berry.sh/c/34ae9927-082f-4e30-a3f3-5eaa4143985b';
-  const pixels = [
-    'https://cs.berry.sh/l/34ae9927-082f-4e30-a3f3-5eaa4143985b/pixel.png',
-  ];
-  const title = 'Rollbar';
-  const description =
-    'Real-time error monitoring, alerting, and analytics for developers 🚀';
-
-  return {
-    url,
-    description,
-    title,
-    pixels,
-  };
+  return sponsor;
 }
 
 module.exports = cors(async req => {
