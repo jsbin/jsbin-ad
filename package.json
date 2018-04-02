@@ -8,7 +8,8 @@
     "dotenv": true
   },
   "scripts": {
-    "start": "micro"
+    "start": "micro",
+    "build": "node build.js"
   },
   "keywords": [],
   "author": "",
